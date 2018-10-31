@@ -1,2 +1,6 @@
-# FFD
-Free Form Deformation
+# To Do List
+网格控制点联动卡顿(递归)及控制点数目选择少
+
+所选控制点颜色高亮
+
+清屏
