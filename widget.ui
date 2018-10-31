@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>FFD</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>70</y>
+     <width>471</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="layout"/>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>130</y>
+     <width>151</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="xLabel">
+        <property name="text">
+         <string>x轴切分个数          </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="xValue">
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QSlider" name="xSlider">
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
+      <property name="minimum">
+       <number>2</number>
+      </property>
+      <property name="maximum">
+       <number>3</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="yLabel">
+        <property name="text">
+         <string>y轴切分个数          </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="yValue">
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QSlider" name="ySlider">
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
+      <property name="minimum">
+       <number>2</number>
+      </property>
+      <property name="maximum">
+       <number>3</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="zLabel">
+        <property name="text">
+         <string>z轴切分个数          </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="zValue">
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QSlider" name="zSlider">
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
+      <property name="minimum">
+       <number>2</number>
+      </property>
+      <property name="maximum">
+       <number>3</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>330</y>
+     <width>241</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="chooseLabel">
+      <property name="text">
+       <string>选择要控制的点的序号(不能超过总数)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="xidLabel">
+        <property name="text">
+         <string>x轴ID</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="yidLabel">
+        <property name="text">
+         <string>y轴ID</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="zidLabel">
+        <property name="text">
+         <string>z轴ID</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QSpinBox" name="xspinBox">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="yspinBox">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="zspinBox">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>430</y>
+     <width>221</width>
+     <height>123</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <widget class="QLabel" name="moveLabel">
+      <property name="text">
+       <string>控制该点的坐标变化</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="xmoveLabel">
+          <property name="text">
+           <string>x轴移动</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="ymoveLabel">
+          <property name="text">
+           <string>y轴移动</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="zmoveLabel">
+          <property name="text">
+           <string>z轴移动</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QSlider" name="xpointSlider">
+          <property name="cursor">
+           <cursorShape>OpenHandCursor</cursorShape>
+          </property>
+          <property name="maximum">
+           <number>99</number>
+          </property>
+          <property name="value">
+           <number>50</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="ypointSlider">
+          <property name="cursor">
+           <cursorShape>OpenHandCursor</cursorShape>
+          </property>
+          <property name="value">
+           <number>50</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="zpointSlider">
+          <property name="cursor">
+           <cursorShape>OpenHandCursor</cursorShape>
+          </property>
+          <property name="value">
+           <number>50</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>271</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_7">
+    <item>
+     <widget class="QSlider" name="scaleobjSlider">
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="minimum">
+       <number>0</number>
+      </property>
+      <property name="value">
+       <number>50</number>
+      </property>
+      <property name="sliderPosition">
+       <number>50</number>
+      </property>
+      <property name="tracking">
+       <bool>true</bool>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="invertedAppearance">
+       <bool>false</bool>
+      </property>
+      <property name="invertedControls">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="xobjSlider">
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="pageStep">
+       <number>10</number>
+      </property>
+      <property name="value">
+       <number>50</number>
+      </property>
+      <property name="sliderPosition">
+       <number>50</number>
+      </property>
+      <property name="tracking">
+       <bool>true</bool>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="invertedAppearance">
+       <bool>false</bool>
+      </property>
+      <property name="invertedControls">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="yobjSlider">
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="value">
+       <number>50</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="invertedAppearance">
+       <bool>false</bool>
+      </property>
+      <property name="invertedControls">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="zobjSlider">
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="value">
+       <number>50</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="invertedAppearance">
+       <bool>false</bool>
+      </property>
+      <property name="invertedControls">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>261</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_8">
+    <item>
+     <widget class="QLabel" name="scaleobjLabel">
+      <property name="text">
+       <string>  放缩obj</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="xobjLabel">
+      <property name="text">
+       <string>    x轴</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="yobjLabel">
+      <property name="text">
+       <string>   y轴</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="zobjLabel">
+      <property name="text">
+       <string> z轴</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>20</y>
+     <width>441</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_9">
+    <item>
+     <widget class="QPushButton" name="openButton">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>加载obj文件</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="lineButton">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>不显示线框</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
